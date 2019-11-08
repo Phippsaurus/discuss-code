@@ -10,7 +10,7 @@ if !exists('s:discuss_job_id')
 	let s:discuss_job_id = 0
 endif
 
-let s:bin = '/home/philipp/Repos/discuss-code/target/release/discuss-code'
+let s:bin = expand('<sfile>:p:h:h') . '/target/release/discuss-code'
 
 function! s:connect()
 	let id = s:init_rpc()
